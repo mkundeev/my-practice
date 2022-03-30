@@ -133,6 +133,7 @@ button {
 }
 .services-list {
   display: flex;
+  margin-bottom: 55px;
 }
 .services-item {
   width: 353px;
