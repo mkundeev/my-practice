@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
+    <div class="container">
      <nav class="header-nav">
         <ul class=" header-list list">
             <li class="header-item"><a href="" class="header-link link">Главная</a></li>
@@ -21,14 +23,18 @@
             <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
         </ul>
      </nav>
+    </div>
     </header>
     <main>
         <section class="hero">
+            <div class="container">
+
             <p class="hero-text">Передовая IT студия</p>
             <h1 class="hero-title">Мы создаем легкие решения сложных задач и проблем</h1>
             <button type="button" class="button">Наши проекты</button>
         </section>
         <section class="services">
+            <div class="container">
             <h2 class="services-title">Мы создаем мобильные приложения для крупных корпораций</h2>
             <p class="services-post-title">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
             текстов на латинице с начала XVI века.</p>
@@ -50,13 +56,19 @@
                 </li>
             </ul>
             <button type="button" class="button">Все услуги</button>
+            </div>
         </section>
         <section class="standarts">
-            <h2 class="standarts-title title">Высокие стандарты разработки</h2>
-            <p class="standarts-post-title">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-            текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            <a href="" class="standarts-link">Подробнее о компании</a>
+            <div class="container">
+                <div class="standarts-bottom-line">
+                <div class="standarts-wrap">
+                <h2 class="standarts-title title">Высокие стандарты разработки</h2>
+                <p class="standarts-post-title">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a href="" class="standarts-link">Подробнее о компании</a>
+                </div>
             <img src="./img/rectangle.jpg" alt="работа за компютером" width="500" height="400">
+            </div>
             <ul class="standarts-list list">
                 <li class="standarts-item">
                     <img src="./img/web-programming.png" alt="рисунок">
@@ -69,8 +81,8 @@
                 </li>
                 <li class="standarts-item">
                     <img src="./img/web-programming.png" alt="рисунок">
-                    <span>125</span>
-                    <p lang="en" class="standarts-text">Our projects</p>
+                    
+                    <p lang="en" class="standarts-text"><span class="standarts-numb">125</span>Our projects</p>
                 </li>
                 <li class="standarts-item">
                     <img src="./img/web-programming.png" alt="рисунок">
@@ -83,21 +95,25 @@
                     <p lang="en" class="standarts-text"><span class="standarts-numb">125</span>Our projects</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="works">
+            <div class="container">
+                <div class="works-botton-line">
+                    <div class="works-header">
             <h2 class="works-title title">Наши работы, на которых мы специализируемся</h2>
             <button type="button" class="button">Все услуги</button>
-            
+                    </div>
             <ul class="works-list list">
                 <li class="works-item">
-                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300">
+                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300" class="works-img">
                     <h3 class="works-item-title"><span class="works-numb">01</span>Исследование и упаковка</h3>
                     <p class="works-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                     текстов на латинице с начала XVI века.</p>
                     <a href="" class="works-link">Подробнее</a>
                 </li>
                 <li class="works-item">
-                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300">
+                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300" class="works-img">
                     <h3 class="works-item-title"><span class="works-numb">01</span>Исследование и упаковка</h3>
                     <p class="works-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
                         "рыбой" для
@@ -105,7 +121,7 @@
                     <a href="" class="works-link">Подробнее</a>
                 </li>
                 <li class="works-item">
-                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300">
+                    <img src="./img/rectangle2.jpg" alt="коворкинг" width="350" height="300" class="works-img">
                     <h3 class="works-item-title"><span class="works-numb">01</span>Исследование и упаковка</h3>
                     <p class="works-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
                         "рыбой" для
@@ -113,8 +129,11 @@
                     <a href="" class="works-link">Подробнее</a>
                 </li>
             </ul>
+            </div>
+            </div>
         </section>
         <section class="projects">
+            <div class="container">
             <h2 class="projects-title title">Наши проекты</h2>
             <p class="projects-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
             текстов на латинице с начала XVI века.</p>
@@ -133,25 +152,35 @@
                 </li>
             </ul>
             <button type="button" class="button">Все проекты</button>
+            </div>
         </section>
         <section class="video">
+            <div class="container">
+                <div class="video-bottom-line">
             <h2 class="video-title title">Видео о нашей работе</h2>
             <p class="video-text">Просто посмотрите, как мы работаем</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ApyXgB9I2f8" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+                </div>
+            </div>
         </section>
         <section class="form">
+            <div class="container">
             <b class="form-sign">Подпишитесь на нашу рассылку</b>
             <p class="form-text"> Полезные статьи, акции, новости - получите все это сейчас!</p>
-            <form action="">
+            <form action="" class="form-wrap">
                 <input type="email" placeholder="Ваш e-mail" class="input">
-                <button type="submit" class="button">Подписаться</button>
+                <button type="submit" class="button-form button">Подписаться</button>
             </form>
             <p class="form-text-bottom">Мы не шлем спам, и передаем никому ваши данные.</p>
+            </div>
+        </div>
 
         </section>
         <footer class="footer">
+            <div class="container">
+                <div class="footer-bottom-line">
             <ul class="footer-list-main list">
                 <li class="footer-item-main">
                     <p class="footer-text">Контактная информация</p>
@@ -191,6 +220,8 @@
                     </ul>
                 </li>
             </ul>
+            </div>
+            </div>
             <p class="footer-copyright">&copy; Все права защищены.</p>
         </footer>
     </main>
