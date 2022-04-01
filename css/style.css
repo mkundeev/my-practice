@@ -60,10 +60,13 @@ img {
 /* ----------------------HEADER---------------------------- */
 .header {
   display: block;
-  background-color: rgb(90, 79, 79);
+  /* background-color: rgb(90, 79, 79); */
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e0e0e0;
+  min-height: 100px;
+  position: absolute;
+  width: 100%;
 
 }
 .header-link {
@@ -83,9 +86,11 @@ img {
 /* ---------------------------HERO-------------------------- */
 .hero {
   background-color: rgb(29, 25, 25);
-  padding-top: 220px;
+  padding-top: 320px;
   padding-bottom: 315px;
-  background-image: url('../img/project.png');
+  background-image: url('../img/backgroun.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-text {
   font-weight: 500;
