@@ -85,7 +85,7 @@ img {
   background-color: rgb(29, 25, 25);
   padding-top: 220px;
   padding-bottom: 315px;
-  background-image: url('');
+  background-image: url('../img/project.png');
 }
 .hero-text {
   font-weight: 500;
