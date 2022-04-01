@@ -31,6 +31,7 @@ button {
   cursor: potnter;
   font-family: inherit;
   
+  
 }
 img {
   display: block;
@@ -58,10 +59,12 @@ img {
 }
 /* ----------------------HEADER---------------------------- */
 .header {
+  display: block;
   background-color: rgb(90, 79, 79);
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e0e0e0;
+
 }
 .header-link {
   font-weight: 500;
@@ -425,11 +428,5 @@ img {
   margin-bottom: 30px;
 }
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
