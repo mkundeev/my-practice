@@ -424,3 +424,12 @@ img {
 .footer-item:not(:last-child) {
   margin-bottom: 30px;
 }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
