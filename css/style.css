@@ -551,6 +551,22 @@ img {
 content: '\003E';
 margin-right: 10px;
 }
+/* -------------flex-box------------- */
+.flex-box-list{
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background-color: #323232;
+  width: 360px;
+  gap: 10px;
 
+  display: flex;
+  flex-wrap: wrap;
+}
+.lex-box-item{
+  width: 100px;
+  height: 100px;
+  background-color: #4985ff;
+}
 
 
