@@ -185,22 +185,29 @@ console.table(cart.getItems());
 // const filteredNumbers = numbers.filter(value => value > 2);
 // console.log(filteredNumbers);
 
-const tweets = [
-  { id: "000", likes: 5, tags: ["js", "nodejs"] },
-  { id: "001", likes: 2, tags: ["html", "css"] },
-  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
-  { id: "003", likes: 8, tags: ["css", "react"] },
-  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
-];
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+// const tweets = {js:0, html:1, css:1, html:1, }
 
-const getTags = tweets =>
-  tweets.reduce((allTags, tweet) => {
-    allTags.push(...tweet.tags);
+// console.table(tweets);
+// console.log(tweets["js"]);
+// tweets["js"] = 2;
+// console.table(tweets);
 
-    return allTags;
-  }, []);
 
-const tags = getTags(tweets);
+// const getTags = tweets =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
+
+//     return allTags;
+//   }, []);
+
+// const tags = getTags(tweets);
 
 // Вынесем callback-функцию отдельно, а в reducе передадим ссылку на нее.
 // Это стандартная практика если callback-функция довольно большая.
@@ -208,18 +215,126 @@ const tags = getTags(tweets);
 // Если в объекте-аккумуляторе acc нету своего свойства с ключем tag,
 // то создаем его и записывает ему значение 0.
 // В противном случае увеличиваем значение на 1.
-const getTagStats = (acc, tag) => {
-  if (!acc.hasOwnProperty(tag)) {
-    acc[tag] = 0;
-  }
+// const getTagStats = (acc, tag) => {
+//   if (!acc.hasOwnProperty(tag)) {
+//     acc[tag] = 0;
+      
+//   }
 
-  acc[tag] += 1;
+//   acc[tag] += 1;
+  
+//   return acc;
+// };
 
-  return acc;
+// // Начальное значение аккумулятора это пустой объект {}
+// const countTags = tags => tags.reduce(getTagStats, {});
+
+// const tagCount = countTags(tags);
+// console.log(tagCount);
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const pureChangeEven = [];
+
+//     numbers.forEach(number => {
+//         if (number % 2 === 0) {
+      
+//             pureChangeEven.push(number + value);
+     
+//         } else {
+//             pureChangeEven.push(number);
+//             console.log(pureChangeEven);
+//         }
+    
+//     })
+//   return pureChangeEven;
+//   // Change code above this line
+// };
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// const getTotalBalanceByGender = (users, gender) => {
+//    return [...users].filter(user => user.gender === gender).map(user => user.balance).reduce((acc, balance) => acc + balance)
+// };
+// console.log(getTotalBalanceByGender(users, "male"))
+function showThis() {
+  console.log("this in showThis: ", this);
+}
+
+// Вызываем в глобальном контексте
+showThis(); // this in showThis: Window
+
+const user = {
+  username: "Mango",
 };
 
-// Начальное значение аккумулятора это пустой объект {}
-const countTags = tags => tags.reduce(getTagStats, {});
+// Записываем ссылку на функцию в свойство объекта
+// Обратите внимание, что это не вызов - нет ()
+user.showContext = showThis;
 
-const tagCount = countTags(tags);
-console.log(tagCount);
+// Вызываем функцию в контексте объекта
+// this будет указывать на текущий объект, в контексте
+// которого осуществляется вызов, а не на глобальный объект.
+user.showContext(); 
